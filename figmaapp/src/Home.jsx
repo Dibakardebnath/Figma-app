@@ -8,6 +8,10 @@ import redLine from './Images/redLine.png'
 import textLine from './Images/textLine.png'
 import group12 from './Images/Group 12.png'
 import why from './Images/why-img.png'
+import virtual from './Images/virtual tour n stats.png'
+import group23 from './Images/Group 23.png'
+
+
 
 
 
@@ -46,7 +50,16 @@ const Home = () => {
        <div className='why-container'>
         <img width={'100%'} src={why} alt="" />
        </div>
+
+       <div className='white-container'>
+
+        <img width={'100%'} src={virtual} alt="" />
+
+       </div>
       
+       <footer className='footer'>
+    <img width={'100%'} src={group23} alt="" />
+       </footer>
     </div>
   )
 }
