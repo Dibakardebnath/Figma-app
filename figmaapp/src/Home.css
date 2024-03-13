@@ -1,4 +1,286 @@
-.main-container {
+*{
+  margin: 0;
+  padding: 0;
+}
+.nav-container {
+    position: fixed;
+    top: 5;
+    left: 0;
+    width: 100%;
+    color: #fff; 
+    text-align: center;
+    z-index: 1000;
+ 
+}
+.nav-container a {
+  margin: 10px 20px; 
+  text-decoration: none;
+  font-size: large;
+  color: white;
+  
+
+}
+.parent-nav-div{
+  background-image: url('./Images/madeira.png'); 
+  background-size: cover; 
+  
+  background-position: center; 
+  padding: 20px;
+  height: 50em;
+}
+
+  .second-main-container {
+    /* border: 1px solid; */
+    position: relative; /* Make the container position-relative */
+    width: 100%; /* Set the width of the container */
+    height: 120vh;
+    /* background-color: #f0f0f0; Optional background color for visualization */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  /* Style for the button */
+  .second-main-container button {
+    /* border: 1px solid; */
+    position: absolute;
+    top: 700px; /* Add margin to separate from other elements */
+    left: 200px;
+    padding: 10px;
+    border: 1px solid #DBC79F;
+    border-radius: 20px;
+
+  }
+
+  /* Example styles for positioning */
+  .second-main-container div {
+    /* border: 1px solid; */
+    width: 40%;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+   
+
+font-family: Mirador;
+font-size: 40px;
+font-style: italic;
+font-weight: 800;
+line-height: 40px;
+letter-spacing: 0.02em;
+text-align: left;
+
+  }
+.text-2{
+font-family: TT Chocolates Trl;
+font-size: 40px;
+font-weight: 800;
+line-height: 40px;
+letter-spacing: 0.02em;
+text-align: left;
+color: green;
+}
+  .second-main-container img:nth-of-type(1) { 
+                                                      /* kick */
+    /* border: 1px solid; */
+    position: absolute;
+    top: 20px;
+    /* left: 500px; */
+    right: 100px;
+    
+  }
+
+  .second-main-container img:nth-of-type(2) {
+                                                   /* horse */
+    /* border: 1px solid; */
+    position: absolute;
+    top: 350px;
+    right: 50px;
+  }
+
+  .second-main-container img:nth-of-type(3) {
+                                                  /* logo */
+    /* border: 1px solid; */
+    position: absolute;
+    /* bottom: 200px; */
+    top: 350px;
+    left: 620px;
+  }
+
+  .second-main-container img:nth-of-type(4) {
+
+                                                    /* swim */
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    /* right: 500px; */
+  }
+
+
+
+  .third-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .grp3-img {
+    width: 100%;
+    display: block;
+  }
+
+  .youtube-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+  }
+
+
+  .girl-main-container{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .girl-h2{
+    font-family: Mirador;
+font-size: 35px;
+font-style: italic;
+font-weight: 900;
+line-height: 40px;
+letter-spacing: 0.02em;
+text-align: left;
+color:  #B90124;
+
+  }
+
+
+.girl-p{
+  font-family: TT Chocolates Trl;
+  font-size: 20px;
+  font-style: italic;
+  /* font-weight: 900; */
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: black;
+  margin-top: 5px;
+}
+.girl-first-container{
+/* border: 1px solid; */
+padding: 20px;
+width: 30%;
+}
+
+.girl-second-container{
+/* border: 1px solid; */
+width: 50%;
+}
+
+.button{
+  border: 1px solid #DBC79F;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 8%;
+  margin-left: 50%;
+}
+
+
+
+.why-container {
+
+  margin: 5rem auto;
+  width: 90%;
+}
+
+
+
+
+/* https://www.npmjs.com/package/react-animated-numbers */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .main-container {
   max-width: 100%;
   overflow: hidden;
 }
@@ -9,7 +291,7 @@
   position: relative;
 }
 .nav-img {
-  /* border: 10px solid; */
+
   flex: 1;
   position: fixed; 
   top: 50px;
@@ -23,7 +305,7 @@
   flex: 1;
 }
 .group3 {
-  /* border: 1px solid; */
+
   position: relative;
   display: inline-block;
 }
@@ -37,20 +319,20 @@
 }
 
 .girlImg-main-container {
-  /* border: 1px solid; */
+
   width: 80%;
   display: flex;
   margin: auto;
   padding-left: 5rem;
-  /* justify-content: space-evenly; */
+ 
 }
 .girl-img {
-  /* border: 1px solid; */
+
   width: max-content;
   flex: 0.3;
 }
 .girl-second-container {
-  /* border: 1px solid; */
+
   display: flex;
   flex-direction: column;
   flex: 0.7;
@@ -59,7 +341,7 @@
   gap: 20px;
 }
 .girl-container-button {
-  /* border: 1px solid; */
+
   margin-left: 17rem;
   transition: transform 0.3s ease;
 }
@@ -67,7 +349,7 @@
   transform: scale(1.1);
 }
 .why-container {
-  /* border: 1px solid; */
+
   margin: 10rem auto;
   width: 90%;
 }
@@ -80,4 +362,4 @@
 .footer {
   width: 100%;
   margin: auto;
-}
+} */
